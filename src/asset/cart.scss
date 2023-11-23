@@ -1,0 +1,108 @@
+.header {
+    position: relative;
+    .home {
+        position: absolute;
+        top: 10px;
+        background-color: #2C5364;
+        border: none;
+    }
+}
+
+.heading {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #0F2027;
+}
+
+
+.item {
+    width: 80%;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    .info {
+        display: flex;
+        flex-direction: column;
+        img {
+            border-radius: 10px;
+        }
+        .btn {
+            outline: none;
+            margin-top: 10px;
+            padding: 0;
+            button {
+                color: #0F2027;
+                font-weight: bold;
+                font-size: 1rem;
+                border: 1px solid gray;
+                width: 40px;
+                background-color: rgba(127, 162, 176, 0.243);
+            }
+            .count {
+                width: 50px;
+                cursor: default;
+            }
+        }
+    }
+}
+
+.detail {
+    position: relative;
+    p {
+        font-weight: bold;
+    }
+    .total-item {
+        position: absolute;
+        right: 80px;
+        color: #1a3a47;
+        font-weight: bold;
+        font-size: 1.5rem;
+        span {
+            color: #eec644;
+        }
+    }
+    .delete {
+        font-size: 1.5rem;
+        position: absolute;
+        right: 50px;
+        border: none;
+        background-color: #FFF;
+    }
+}
+
+.total-price {
+    margin-top: 20px;
+    text-align: center;
+    .money {
+        color: #eec644;
+    } 
+}
+
+.btn-bot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 200px;
+    .go-home, .payment {
+        border: none;
+        background-color: #eec644;
+        color: #1a3a47;
+        font-size: 1.8rem;
+        font-weight: bold;
+        width: 200px;
+        border-radius: 4px;
+        
+    }
+    .payment {
+        background-color: goldenrod;
+        
+    }
+}
+
+h1 {
+    text-align: center;
+    color: #eec644;
+}
