@@ -14,7 +14,6 @@ export default function Home() {
   const cart = useSelector((state) => state.cart.cart);
   const [count, setCount] = useState(cart.length);
 
-  console.log(cart);
   const [products, setProducts] = useState([]);
 
   const getProducts = async () => {
@@ -43,6 +42,10 @@ export default function Home() {
     navigate("/cart");
   };
 
+  const handleDetail = ({ _id }) => {
+    navigate(`details/${_id}`);
+  };
+
   useLayoutEffect(() => {
     setCount(cart.length);
     localStorage.setItem("cart", JSON.stringify(cart));
@@ -66,7 +69,11 @@ export default function Home() {
           {products.map(({ name, price, image, _id }, index) => (
             <div key={index} className="product-item col-3 m-3">
               <div className="head">
-                <img src={image} alt="image" />
+                <img
+                  src={image}
+                  alt="image"
+                  onClick={() => handleDetail({ _id })}
+                />
                 <h3>{name}</h3>
               </div>
 
